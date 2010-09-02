@@ -20,6 +20,12 @@ describe Astrails::Safe::Config do
         host "sftp host"
       end
 
+      ftp do
+        user "ftp user"
+        password "ftp password"
+        host "ftp host"
+      end
+      
       gpg do
         key "gpg-key"
         password "astrails"
@@ -117,6 +123,12 @@ describe Astrails::Safe::Config do
         "user" => "sftp user",
         "password" => "sftp password",
         "host" => "sftp host",
+      },
+
+      "ftp" => {
+        "user" => "ftp user",
+        "password" => "ftp password",
+        "host" => "ftp host",
       },
 
       "gpg" => {"password" => "astrails", "key" => "gpg-key"},
